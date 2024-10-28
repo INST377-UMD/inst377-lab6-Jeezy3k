@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 6</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="joyola-lab6.js" defer></script>
+    <style>
+        #map {
+            height: 500px;
+        }
+
+        #locality1,
+        #locality2,
+        #locality3 {
+            font-size: small;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h2>Map of US</h2>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div id="map"></div>
+        <div id="markerInfo">
+            <strong>
+                <p>Marker 1: <span id="marker1"></span><br><span id="locality1"></span></p>
+                <p>Marker 2: <span id="marker2"></span><br><span id="locality2"></span></p>
+                <p>Marker 3: <span id="marker3"></span><br><span id="locality3"></span></p>
+            </strong>
+        </div>
+    </main>
+</body>
+
+</html>
